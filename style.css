@@ -1,0 +1,147 @@
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: start;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: 10px 0 0;
+  opacity: 0.75;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-style: normal;
+  text-align: right;
+}
+
+a {
+  color: #483D8B;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.bloc h2,
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+p { line-height: 1.6; }
+
+.cards {
+  display: grid;
+  gap: 18px;
+}
+
+.card {
+  padding: 18px 18px 14px;
+  border: 1px solid #ededed;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.card-head h3 {
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.meta {
+  margin: 0;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
+ul { margin: 10px 0 0; padding-left: 18px; }
+
+.chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips li {
+  border: 1px solid #ededed;
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e9e9e9;
+  opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+  .container { margin: 20px; padding: 24px; }
+  .header { grid-template-columns: 1fr; }
+  .contact { text-align: left; }
+  .top-grid { grid-template-columns: 1fr; }
+  .card-head { flex-direction: column; align-items: flex-start; }
+  .meta { white-space: normal; }
+}
