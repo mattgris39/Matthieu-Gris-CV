@@ -103,6 +103,15 @@ p { line-height: 1.6; }
   margin: 0;
 }
 
+.card {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+}
+
 .section {
   margin-bottom: 15px;
 }
